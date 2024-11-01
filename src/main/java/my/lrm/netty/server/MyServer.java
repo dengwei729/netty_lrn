@@ -8,6 +8,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import my.lrm.netty.param.PacketDecoder;
+import my.lrm.netty.param.PacketEncoder;
 
 /**
  * @author dw113073.邓伟
@@ -36,7 +38,9 @@ public class MyServer {
                     @Override
                     protected void initChannel(SocketChannel socketChannel) throws Exception {
                         //给pipeline管道设置处理器
-                        socketChannel.pipeline().addLast(new MyServerHandler());
+                        socketChannel.pipeline().addLast(new PacketDecoder());
+                        socketChannel.pipeline().addLast(new ServerLoginHandler());
+                        socketChannel.pipeline().addLast(new PacketEncoder());
                     }
                 });//给workerGroup的EventLoop对应的管道设置处理器
             System.out.println("java技术爱好者的服务端已经准备就绪...");

@@ -6,6 +6,8 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import my.lrm.netty.param.PacketDecoder;
+import my.lrm.netty.param.PacketEncoder;
 
 /**
  * @author dw113073.邓伟
@@ -28,7 +30,9 @@ public class MyClient {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception {
                         //添加客户端通道的处理器
-                        ch.pipeline().addLast(new MyClientHandler());
+                        ch.pipeline().addLast(new PacketDecoder());
+                        ch.pipeline().addLast(new ClientLoginHandler());
+                        ch.pipeline().addLast(new PacketEncoder());
                     }
                 });
             System.out.println("客户端准备就绪，随时可以起飞~");
