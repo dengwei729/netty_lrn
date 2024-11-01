@@ -16,8 +16,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  */
 public class MyServer {
     public static void main(String[] args) throws Exception {
-        //创建两个线程组 boosGroup、workerGroup
+        //线程组 boosGroup ： 复制监控客户端请求
         EventLoopGroup bossGroup = new NioEventLoopGroup();
+        // 线程workerGroup： 负责处理每条链接的数据读写
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
             //创建服务端的启动对象，设置参数

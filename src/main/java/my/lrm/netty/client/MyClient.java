@@ -14,6 +14,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
  */
 public class MyClient {
     public static void main(String[] args) throws Exception {
+        //创建线程组： 用于处理服务端请求
         NioEventLoopGroup eventExecutors = new NioEventLoopGroup();
         try {
             //创建bootstrap对象，配置参数
