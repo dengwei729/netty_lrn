@@ -1,4 +1,4 @@
-package my.lrm.netty.server;
+package my.lrn.netty.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -8,8 +8,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import my.lrm.netty.param.PacketDecoder;
-import my.lrm.netty.param.PacketEncoder;
+import my.lrn.netty.param.PacketDecoder;
+import my.lrn.netty.param.PacketEncoder;
 
 /**
  * @author dw113073.邓伟

@@ -1,10 +1,9 @@
-package my.lrm.netty.param;
+package my.lrn.netty.param;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.ByteBufAllocator;
 
 /**
  * @author dw113073.邓伟

@@ -1,4 +1,4 @@
-package my.lrm.netty.param;
+package my.lrn.netty.param;
 
 /**
  * @author dw113073.邓伟

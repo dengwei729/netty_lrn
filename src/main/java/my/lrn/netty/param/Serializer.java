@@ -1,6 +1,4 @@
-package my.lrm.netty.param;
-
-import com.alibaba.fastjson2.JSON;
+package my.lrn.netty.param;
 
 /**
  * @author dw113073.邓伟

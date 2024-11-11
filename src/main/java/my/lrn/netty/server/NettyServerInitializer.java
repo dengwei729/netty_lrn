@@ -1,4 +1,4 @@
-package my.lrm.netty.server;
+package my.lrn.netty.server;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

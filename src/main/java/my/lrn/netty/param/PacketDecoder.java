@@ -1,4 +1,4 @@
-package my.lrm.netty.param;
+package my.lrn.netty.param;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package my.lrm.netty.server;
+package my.lrn.netty.server;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import my.lrm.netty.param.LoginRequestPacket;
-import my.lrm.netty.param.LoginResponsePacket;
+import my.lrn.netty.param.LoginRequestPacket;
+import my.lrn.netty.param.LoginResponsePacket;
 
 /**
  * @author dw113073.邓伟

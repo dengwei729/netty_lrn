@@ -1,12 +1,12 @@
-package my.lrm.netty.client;
+package my.lrn.netty.client;
 
 import java.util.Date;
 import java.util.Random;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import my.lrm.netty.param.LoginRequestPacket;
-import my.lrm.netty.param.LoginResponsePacket;
+import my.lrn.netty.param.LoginRequestPacket;
+import my.lrn.netty.param.LoginResponsePacket;
 
 /**
  * @author dw113073.邓伟
